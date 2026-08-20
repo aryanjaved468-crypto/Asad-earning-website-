@@ -1,147 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yaman Earn - Online Earning</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial,sans-serif;background:#f5f7fb;color:#172033;line-height:1.6}
-header{background:#101827;color:white;padding:20px;text-align:center}
-header h1{font-size:28px;margin-bottom:12px}
-nav a{color:white;text-decoration:none;margin:0 10px;font-size:16px}
-.hero{padding:70px 20px;text-align:center;color:white;background:linear-gradient(135deg,#2563eb,#7c3aed)}
-.hero h2{font-size:42px;line-height:1.2;margin-bottom:20px}
-.hero p{font-size:19px;max-width:650px;margin:auto auto 30px}
-.btn{display:inline-block;background:white;color:#2563eb;padding:15px 25px;border-radius:10px;text-decoration:none;font-weight:bold}
-section{padding:55px 20px;max-width:1000px;margin:auto}
-h2{text-align:center;font-size:32px;margin-bottom:12px}
-.subtitle{text-align:center;color:#667085;margin-bottom:35px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
-.card{background:white;padding:25px;border-radius:15px;box-shadow:0 5px 20px #00000012}
-.card h3{margin-bottom:10px;color:#2563eb}
-.card a{display:inline-block;margin-top:15px;color:#2563eb;font-weight:bold;text-decoration:none}
-.earning{background:#eef4ff}
-.contact{text-align:center}
-footer{background:#101827;color:white;text-align:center;padding:25px}
-</style>
+  <title>Yaman Earn - Online Earning & Digital Resources</title>
+
+  <meta name="description"
+        content="Yaman Earn provides online earning ideas, freelancing guides and useful digital resources.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      font-size: 25px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #2563eb, #06b6d4);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 19px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 13px 25px;
+      background: white;
+      color: #2563eb;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #6b7280;
+      margin-bottom: 35px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 28px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .card .icon {
+      font-size: 40px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #2563eb;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 15px;
+      text-decoration: none;
+      color: white;
+      background: #2563eb;
+      padding: 9px 17px;
+      border-radius: 6px;
+    }
+
+    .earning {
+      background: #ecfdf5;
+    }
+
+    .warning {
+      background: #fff7ed;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    footer {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        text-align: center;
+        justify-content: center;
+        gap: 12px;
+      }
+
+      nav a {
+        margin: 0 7px;
+      }
+
+      .hero h2 {
+        font-size: 32px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-<h1>Yaman Earn</h1>
-<nav>
-<a href="#home">Home</a>
-<a href="#skills">Skills</a>
-<a href="#earn">Earning</a>
-<a href="#resources">Resources</a>
-<a href="#about">About</a>
-</nav>
-</header>
+  <header>
+    <h1>Yaman Earn</h1>
 
-<section class="hero" id="home">
-<h2>Build Skills. Earn Online.</h2>
-<p>Learn useful digital skills, discover online earning opportunities and build your digital future.</p>
-<a class="btn" href="#earn">Explore Opportunities</a>
-</section>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#earning">Earning</a>
+      <a href="#resources">Resources</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<section id="skills">
-<h2>Popular Online Skills</h2>
-<p class="subtitle">Skills that can help you start earning online.</p>
 
-<div class="cards">
-<div class="card">
-<h3>Freelancing</h3>
-<p>Learn how to offer your skills and find clients online.</p>
-</div>
+  <section class="hero" id="home">
 
-<div class="card">
-<h3>Graphic Design</h3>
-<p>Create logos, social media designs and digital graphics.</p>
-</div>
+    <h2>Learn. Work. Earn Online.</h2>
 
-<div class="card">
-<h3>Content Writing</h3>
-<p>Write useful articles, blogs and marketing content.</p>
-</div>
+    <p>
+      Discover freelancing ideas, online earning methods,
+      digital skills and useful resources to build your online future.
+    </p>
 
-<div class="card">
-<h3>Digital Marketing</h3>
-<p>Learn social media, marketing and online promotion.</p>
-</div>
-</div>
-</section>
+    <a href="#earning" class="btn">Start Learning</a>
 
-<section class="earning" id="earn">
-<h2>Online Earning Ideas</h2>
-<p class="subtitle">Start learning before you start investing money.</p>
+  </section>
 
-<div class="cards">
-<div class="card">
-<h3>Freelancing</h3>
-<p>Offer your skills to clients and earn from completed projects.</p>
-<a href="https://www.fiverr.com/">Learn More →</a>
-</div>
 
-<div class="card">
-<h3>Digital Products</h3>
-<p>Create ebooks, templates and other useful digital products.</p>
-<a href="https://payhip.com/" target="_blank">Start Selling →</a>
-</div>
+  <section id="earning">
 
-<div class="card">
-<h3>Affiliate Marketing</h3>
-<p>Promote useful products through legitimate affiliate programs.</p>
-<a href="https://www.fiverr.com/" target="_blank">Learn More →</a>
+    <h2>Online Earning Ideas</h2>
 
-<div class="card">
-<h3>Online Services</h3>
-<p>Turn your skills into simple services people need.</p>
-<a href="https://www.fiverr.com/" target="_blank">Learn More →</a>
-</div>
-</div>
-</section>
+    <p class="subtitle">
+      Learn useful skills and explore different ways to work online.
+    </p>
 
-<section id="resources">
-<h2>Free Resources</h2>
-<p class="subtitle">Useful resources for your online journey.</p>
+    <div class="cards">
 
-<div class="cards">
-<div class="card">
-<h3>Learning Guides</h3>
-<p>Step-by-step guides for beginners.</p>
-</div>
+      <div class="card">
+        <div class="icon">💻</div>
+        <h3>Freelancing</h3>
+        <p>
+          Learn skills such as graphic design, writing,
+          video editing and web development.
+        </p>
+        <a href="#resources">Learn More</a>
+      </div>
 
-<div class="card">
-<h3>Business Ideas</h3>
-<p>Explore practical online business ideas.</p>
-</div>
 
-<div class="card">
-<h3>Digital Skills</h3>
-<p>Improve your skills and create new opportunities.</p>
-</div>
-</div>
-</section>
+      <div class="card">
+        <div class="icon">🎨</div>
+        <h3>Graphic Design</h3>
+        <p>
+          Create thumbnails, social media designs,
+          logos and other digital content.
+        </p>
+        <a href="#resources">Explore</a>
+      </div>
 
-<section id="about">
-<h2>About Yaman Earn</h2>
-<p class="subtitle">
-Yaman Earn is a beginner-friendly platform sharing practical information about digital skills, online earning and useful resources.
-</p>
-</section>
 
-<section class="contact">
-<h2>Start Your Journey</h2>
-<p class="subtitle">Learn a skill. Build something useful. Grow online.</p>
-<a class="btn" href="#home">Back to Top</a>
-</section>
+      <div class="card">
+        <div class="icon">🎬</div>
+        <h3>Video Editing</h3>
+        <p>
+          Learn video editing for YouTube,
+          gaming channels and social media.
+        </p>
+        <a href="#resources">Explore</a>
+      </div>
 
-<footer>
-<p>© 2026 Yaman Earn. All Rights Reserved.</p>
-</footer>
+
+      <div class="card">
+        <div class="icon">🌐</div>
+        <h3>Web Development</h3>
+        <p>
+          Learn HTML, CSS and JavaScript
+          and build websites.
+        </p>
+        <a href="#resources">Learn More</a>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section id="resources">
+
+    <h2>Digital Resources</h2>
+
+    <p class="subtitle">
+      Useful platforms and learning resources.
+    </p>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="icon">🚀</div>
+        <h3>Start Freelancing</h3>
+        <p>
+          Build your skills, create a portfolio
+          and start looking for suitable freelance work.
+        </p>
+      </div>
+
+
+      <div class="card">
+        <div class="icon">📚</div>
+        <h3>Learn New Skills</h3>
+        <p>
+          Improve your digital skills through
+          regular practice and learning.
+        </p>
+      </div>
+
+
+      <div class="card">
+        <div class="icon">📱</div>
+        <h3>Content Creation</h3>
+        <p>
+          Create useful videos and digital content
+          for your audience.
+        </p>
+      </div>
+
+    </div>
+
+
+    <div class="warning">
+      <strong>Important:</strong>
+      There is no guaranteed method to make a fixed amount of money online.
+      Always research opportunities carefully and avoid scams.
+    </div>
+
+  </section>
+
+
+  <section class="contact" id="contact">
+
+    <h2>Contact</h2>
+
+    <p class="subtitle">
+      Want to ask a question or suggest a resource?
+    </p>
+
+    <p>
+      Email:
+      <strong>your-email@example.com</strong>
+    </p>
+
+  </section>
+
+
+  <footer>
+
+    <p>
+      © 2026 Yaman Earn. All rights reserved.
+    </p>
+
+    <p>
+      Online Earning • Freelancing • Digital Resources
+    </p>
+
+  </footer>
 
 </body>
 </html>
